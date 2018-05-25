@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="main.js">
+
+var tbdiapo=new Array ('d1.jpg','d2.jpg','d3.jpg','d4.jpg','d5.jpg');
+var tbindex=0;
+var repertoir_image='images/';
+
+function Diaporama(){
+
+ tbmage++;
+ document.getElementById('diapo_1').src=repertoir_image+tbdiapo[tbmage];
+
+ if(tbmage==tbdiapo.length-1){
+
+  tbmage=-1;
+ }
+
+ setTimeout(diap, 500 );
+}
+
+</script>
+</head>
+<body >
+        <img id="d1" />
+</body>
+</html>
